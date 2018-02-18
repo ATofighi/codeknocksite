@@ -46,3 +46,14 @@
 		margin-left: 40px;
 	}
 }
+
+#time {
+	text-align: center;
+	margin: 0;
+	padding: 50px;
+}
+
+#time .clock {
+	max-width: 650px;
+	margin: 2em auto;
+}
