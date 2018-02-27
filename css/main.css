@@ -60,8 +60,22 @@
 	margin: 0;
 	padding: 50px;
 }
+#time {
+	overflow-x: hidden;
+}
 
 #time .clock {
 	max-width: 650px;
 	margin: 2em auto;
+}
+
+@media(max-width: 768px) {
+	#time .clock {
+		max-width: 400px;
+	}
+}
+@media(max-width: 500px) {
+	#time {
+		display:none;
+	}
 }

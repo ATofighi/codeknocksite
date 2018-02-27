@@ -12,40 +12,46 @@ var clock = $('.clock').FlipClock((Date.parse("9 March 2018 16:30:00 GMT+0330") 
     language: 'persian',
 });
 
-var pages = ['body', "#stopwatch", "#about", '#past_contests', '#prizes', '#sponser', '#contact'];
+var pages = ['body', "#time", "#about", '#past_contests', '#prizes', '#sponser', '#contact'];
 
+var isDoingScroll = false;
 $(window).keydown(function (env) {
-    var tops = [];
-    for (var i = 0; i < pages.length; i++) {
-        var page = pages[i];
-        tops.push($(page).offset().top);
-    }
-    var cur = $('html, body').scrollTop();
-    var elm = '';
-    if (env.keyCode == 38) {
-        // bala
+    if (!isDoingScroll) {
+        var tops = [];
         for (var i = 0; i < pages.length; i++) {
-            if (tops[i] < cur) {
-                elm = pages[i];
+            var page = pages[i];
+            tops.push($(page).offset().top);
+        }
+        var cur = $('html, body').scrollTop();
+        var elm = '';
+        if (env.keyCode == 38) {
+            // bala
+            for (var i = 0; i < pages.length; i++) {
+                if (tops[i] < cur - 5) {
+                    elm = pages[i];
+                }
+            }
+
+        } else if (env.keyCode == 40) {
+            // payin
+            for (var i = 0; i < pages.length; i++) {
+                if (tops[i] > cur + 5) {
+                    elm = pages[i];
+                    break;
+                }
             }
         }
 
-    } else if (env.keyCode == 40) {
-        // payin
-        for (var i = 0; i < pages.length; i++) {
-            if (tops[i] > cur) {
-                elm = pages[i];
-                break;
-            }
+        if (elm) {
+            isDoingScroll = true;
+            setTimeout(function () {
+                isDoingScroll = false;
+            }, 500);
+            $('html, body').animate({
+                scrollTop: $(elm).offset().top
+            }, 500);
         }
     }
-
-    if (elm) {
-        $('html, body').animate({
-            scrollTop: $(elm).offset().top
-        }, 500);
-    }
-
 });
 
 $('a[href^="#"]').on('click', function (event) {
