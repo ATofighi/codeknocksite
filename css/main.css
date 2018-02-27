@@ -1,6 +1,14 @@
 #intro {
-	background: url("../img/header-background.jpg") no-repeat top right;
+	background: #141615 url("../img/header-background.jpg") no-repeat top right;
 	background-size: cover;
+}
+
+@media(max-width: 768px) {
+	#intro {
+		background-image: url("../img/the-head-2.png");
+		background-size: 100%;
+	}
+
 }
 
 .top-nav-collapse {
