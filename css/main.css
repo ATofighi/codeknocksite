@@ -79,7 +79,8 @@
 	#countdown {
 		width: 100%; 
 		  height: auto; 
-		  position: absolute; 
+		  position: relative; 
+		margin: 10%;
 	}
 }
 #countdown{
