@@ -55,30 +55,8 @@
 	}
 }
 
-#time {
-	text-align: center;
-	margin: 0;
-	padding: 50px;
-}
-#time {
-	overflow-x: hidden;
-}
 
-#time .clock {
-	max-width: 650px;
-	margin: 2em auto;
-}
 
-@media(max-width: 768px) {
-	#time .clock {
-		max-width: 400px;
-	}
-}
-@media(max-width: 465px) {
-	#countdown {
-		width: 100%; 
-	}
-}
 #countdown{
 	width: 40%;
 	height: 112px;
@@ -136,4 +114,10 @@
 	text-align: center;
 	text-transform: uppercase;
 	display: inline-block;
+}
+
+@media(max-width: 465px) {
+	#countdown{
+		width: 100%; 
+	}
 }
