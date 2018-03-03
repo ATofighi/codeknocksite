@@ -78,13 +78,10 @@
 	
 	#countdown {
 		width: 100%; 
-		  height: auto; 
-		  position: relative; 
-		margin: 10%;
 	}
 }
 #countdown{
-	width: 465px;
+	width: 40%;
 	height: 112px;
 	text-align: center;
 	background: #222;
@@ -95,6 +92,7 @@
 	border: 1px solid #111;
 	border-radius: 5px;
 	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
+	position: absolute; 
 	margin:0 auto;
 }
 
