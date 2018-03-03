@@ -75,7 +75,6 @@
 	}
 }
 @media(max-width: 465px) {
-	
 	#countdown {
 		width: 100%; 
 	}
@@ -92,7 +91,7 @@
 	border: 1px solid #111;
 	border-radius: 5px;
 	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.6);
-	position: absolute; 
+	position: relative; 
 	margin:0 auto;
 }
 
