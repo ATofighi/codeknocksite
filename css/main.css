@@ -80,8 +80,7 @@
 }
 
 #countdown #tiles > span{
-	width: 92px;
-	max-width: 92px;
+	width: 20%;
 	font: bold 48px 'Droid Sans', Arial, sans-serif;
 	text-align: center;
 	color: #111;
@@ -93,8 +92,8 @@
 	border-top: 1px solid #fff;
 	border-radius: 3px;
 	box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.7);
-	margin: 0 7px;
-	padding: 18px 0;
+	margin: 0 1%;
+	padding: 3% 0;
 	display: inline-block;
 	position: relative;
 }
