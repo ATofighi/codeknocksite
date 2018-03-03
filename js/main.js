@@ -1,4 +1,4 @@
-var target_date = 1520607600;
+var target_date = 1520541697000;
 var days, hours, minutes, seconds; // variables for time units
 
 var countdown = document.getElementById("tiles"); // get tag element
