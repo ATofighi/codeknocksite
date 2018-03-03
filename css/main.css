@@ -74,9 +74,9 @@
 		max-width: 400px;
 	}
 }
-@media(max-width: 500px) {
-	#time {
-		display:none;
+@media(max-width: 465px) {
+	#countdown {
+		width: 400px;
 	}
 }
 #countdown{
