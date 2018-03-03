@@ -116,7 +116,7 @@
 	display: inline-block;
 }
 
-@media(max-width: 465px) {
+@media(max-width: 475px) {
 	#countdown{
 		width: 100%; 
 	}
