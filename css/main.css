@@ -1,3 +1,6 @@
+@-ms-viewport{
+  width: device-width;
+}
 #intro {
 	background: #141615 url("../img/header-background.jpg") no-repeat top right;
 	background-size: cover;
