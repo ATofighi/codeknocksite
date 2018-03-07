@@ -69,12 +69,12 @@
 	margin: 2em auto;
 }
 
-@media(max-width: 768px) {
+@media only screen and (max-device-width: 768px) {
 	#time .clock {
 		max-width: 400px;
 	}
 }
-@media(max-width: 507px) {
+@media only screen and (max-device-width: 507px) {
 	#time {
 		padding: 1px;
 	}
