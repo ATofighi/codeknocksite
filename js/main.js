@@ -6,7 +6,8 @@ FlipClock.Lang.persian = {
     seconds: "ثانیه",
     years: "سال"
 };
-var clock = $('.clock').FlipClock((Date.parse("9 March 2018 18:30:00 GMT+0330") - Date.now()) / 1000, {
+//var clock = $('.clock').FlipClock((Date.parse("9 March 2018 18:30:00 GMT+0330") - Date.now()) / 1000, {
+var clock = $('.clock').FlipClock((Date.now()) / 1000, {
     clockFace: 'DailyCounter',
     countdown: true,
     language: 'persian',
