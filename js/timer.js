@@ -33,7 +33,8 @@ function initTimer(t) {
     function updateTimer() {
 
         var timestr;
-        var date = new Date().setTime(Date.parse("2018-03-10 16:30:00 ") - Date.now());
+        //var date = new Date().setTime(Date.parse("2018-03-10 16:30:00 ") - Date.now());
+        var date = new Date().setTime(Date.now());
         console.log(date);
 
         var newDate = new Date(date.valueOf() - 1000);
@@ -47,8 +48,8 @@ function initTimer(t) {
         timeNumbers = timestr.split('');
         updateTimerDisplay(timeNumbers);
 
-        if (timestr === '0000')
-            countdownFinished();
+        //if (timestr === '0000')
+        //    countdownFinished();
 
         if (timestr != '0000')
             setTimeout(updateTimer, 1000);
